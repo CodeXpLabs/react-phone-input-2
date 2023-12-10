@@ -901,7 +901,10 @@ class PhoneInput extends React.Component {
                             })}
                             style={{
                                 ...searchStyle,
-                                margin: '0', width: '97%', height: '30px'
+                                margin: '0',
+                                width: '100%',
+                                height: '30px',
+                                padding: '20px'
                             }}
                             type='Search'
                             placeholder={searchPlaceholder}
@@ -914,7 +917,9 @@ class PhoneInput extends React.Component {
                 )}
                 <div style={{
                     overflowY: 'auto',
-                    height: '200px'
+                    height: '210px',
+                    'marginRight': '5px',
+                    'marginTop': '10px',
                 }}>{countryDropdownList.length > 0
                     ? countryDropdownList
                     : (
