@@ -918,8 +918,8 @@ class PhoneInput extends React.Component {
                 <div style={{
                     overflowY: 'auto',
                     height: '210px',
-                    'marginRight': '5px',
-                    'marginTop': '10px',
+                    marginRight: '5px',
+                    marginTop: '10px',
                 }}>{countryDropdownList.length > 0
                     ? countryDropdownList
                     : (
