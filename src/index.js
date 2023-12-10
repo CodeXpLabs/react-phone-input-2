@@ -111,7 +111,7 @@ class PhoneInput extends React.Component {
         excludeCountries: [],
 
         placeholder: '1 (702) 123-4567',
-        searchPlaceholder: 'search',
+        searchPlaceholder: 'Search',
         searchNotFound: 'No entries to show',
         flagsImagePath: './flags.png',
         disabled: false,
@@ -881,7 +881,7 @@ class PhoneInput extends React.Component {
                     ...this.props.dropdownStyle,
                     padding: '2px 0',
                     borderRadius: '12px',
-                    minHeight: '250px',
+                    minHeight: '260px',
                     overflow: 'hidden',
                 }}
                 role='listbox'
@@ -903,7 +903,7 @@ class PhoneInput extends React.Component {
                                 ...searchStyle,
                                 margin: '0', width: '97%', height: '30px'
                             }}
-                            type='search'
+                            type='Search'
                             placeholder={searchPlaceholder}
                             autoFocus={true}
                             autoComplete={autocompleteSearch ? 'on' : 'off'}
@@ -1012,7 +1012,7 @@ class PhoneInput extends React.Component {
                             onClick={disableDropdown ? undefined : this.handleFlagDropdownClick}
                             className={selectedFlagClasses}
                             title={selectedCountry ? `${selectedCountry.localName || selectedCountry.name}: + ${selectedCountry.dialCode}` : ''}
-                            tabIndex={disableDropdown ? '-1' : '0'}
+                            tabIndex="-1"
                             role='button'
                             aria-haspopup="listbox"
                             aria-expanded={showDropdown ? true : undefined}
